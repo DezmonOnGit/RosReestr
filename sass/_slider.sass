@@ -1,0 +1,81 @@
+.slider
+	position: relative
+
+.slider .owl-stage
+	display: flex
+
+.slider .owl-item
+	width: 100%
+
+.slider .owl-prev,
+.slider .owl-next
+	width: 48px
+	height: 48px
+	position: absolute
+	top: calc(50% - 24px)
+	transition: all .3s
+
+.slider .owl-prev
+	left: 92px
+
+.slider .owl-next
+	right: 92px
+
+.slider .owl-prev.disabled,
+.slider .owl-next.disabled
+	opacity: 0
+	pointer-events: none
+
+.slider .owl-prev:hover,
+.slider .owl-next:hover
+	transform: scale(1.2)
+
+.slider .owl-prev .arrow-prev,
+.slider .owl-next .arrow-next
+	fill: #2E3032
+	transition: all .3s
+
+.slider .owl-prev:hover .arrow-prev,
+.slider .owl-next:hover .arrow-next
+	fill: #67981A
+
+.slider .arrow-next
+	transform: rotate(180deg)
+
+.slider__main .slider__item
+	min-height: 400px
+	display: flex
+
+.slider__main .slider__item-inner
+	display: flex
+
+.slider__main .slider__content
+	width: 50%
+	display: flex
+	flex-wrap: wrap
+
+.slider__title
+	font-weight: 600
+	font-size: 48px
+	line-height: 1.2
+
+.slider__main .slider__title
+	width: 100%
+
+.slider__main .slider__links
+	width: 100%
+	margin-top: auto
+
+.slider__item
+	padding: 40px 0
+	background-position: center
+	-webkit-background-size: cover
+	background-size: cover
+	background-repeat: no-repeat
+
+.slider__links
+	display: flex
+	flex-wrap: wrap
+
+.slider__links .button__details
+	margin-right: 24px
