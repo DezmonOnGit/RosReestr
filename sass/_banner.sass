@@ -1,0 +1,196 @@
+.banner__collection
+	padding: 127px 0 0
+	min-height: 425px
+	margin-bottom: 40px
+	position: relative
+	top: -27px
+
+.banner__parallax
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 425px
+	background-color: #EDEBF6
+	overflow: hidden
+
+//.banner__background
+//	position: fixed
+//	width: 100%
+//	height: 900px
+//	top: 0
+//	left: 0
+//	transform: translateZ(-1px)
+//	z-index: 1
+
+.banner__inner
+	position: relative
+
+.banner__items
+	display: flex
+	flex-wrap: wrap
+
+.banner__item
+	display: flex
+	flex-wrap: wrap
+	width: calc(33.3333% - 16px)
+	height: calc(1176px / 3 - 16px)
+	overflow: hidden
+	padding: 60px 32px
+	margin-right: 24px
+	margin-bottom: 24px
+	background-color: #fff
+	border-radius: 2px
+	box-shadow: 0 12px 40px rgba(181, 181, 181, .16)
+	text-decoration: none
+	position: relative
+	color: #292C2F
+	transition: all .3s
+
+.banner__item:hover
+	box-shadow: 0 0 40px rgba(181, 181, 181, .6)
+
+.banner__item:nth-child(3n+3)
+	margin-right: 0
+
+[data-banner-count="1"] .banner__item
+	width: 100%
+	height: 375px
+	display: flex
+	flex-wrap: wrap
+	overflow: hidden
+	padding: 60px 32px
+	margin-right: 24px
+	margin-bottom: 24px
+	background-color: #fff
+	border-radius: 2px
+	box-shadow: 0px 12px 40px rgba(181, 181, 181, 0.16)
+	text-decoration: none
+	color: #292C2F
+
+[data-banner-count="1"] .banner__item:nth-child(3n+3)
+	margin-right: 0
+
+[data-banner-count="2"] .banner__item
+	width: calc(50% - 12px)
+	height: calc(1176px / 2 - 12px)
+	display: flex
+	flex-wrap: wrap
+	overflow: hidden
+	padding: 60px 32px
+	margin-right: 24px
+	margin-bottom: 24px
+	background-color: #fff
+	border-radius: 2px
+	box-shadow: 0px 12px 40px rgba(181, 181, 181, 0.16)
+	text-decoration: none
+	color: #292C2F
+
+[data-banner-count="2"] .banner__item:nth-child(3n+3)
+	margin-right: 24px
+
+[data-banner-count="2"] .banner__item:nth-child(2n+2)
+	margin-right: 0
+
+[data-banner-count="4"] .banner__item
+	width: calc(25% - 18px)
+	height: calc(1176px / 3 - 18px)
+	display: flex
+	flex-wrap: wrap
+	overflow: hidden
+	padding: 60px 32px
+	margin-right: 24px
+	margin-bottom: 24px
+	background-color: #fff
+	border-radius: 2px
+	box-shadow: 0px 12px 40px rgba(181, 181, 181, 0.16)
+	text-decoration: none
+	color: #292C2F
+
+[data-banner-count="4"] .banner__item:nth-child(3n+3)
+	margin-right: 24px
+
+[data-banner-count="4"] .banner__item:nth-child(4n+4)
+	margin-right: 0
+
+.banner__item:hover .title__banner
+	color: #68981A
+
+.banner__item:hover .link--arrow .icon-full-arrow-right
+	color: #68981A
+	transform: translateX(5px)
+
+.banner__btns
+	width: 100%
+
+.banner__collection .banner__btns
+	margin-top: auto
+
+.banner__imgs
+	margin-bottom: 80px
+
+.banner__imgs .banner__item
+	width: calc(50% - 12px)
+	height: 325px
+	padding: 40px 0
+	background-position: center
+	-webkit-background-size: cover
+	background-size: cover
+	background-repeat: no-repeat
+	position: relative
+
+.banner__imgs .banner__item .banner__content
+	position: relative
+	z-index: 20
+
+.banner__imgs .banner__item:nth-child(3n+3)
+	margin-right: 24px
+
+.banner__imgs .banner__item:nth-child(2n+2)
+	margin-right: 0
+
+.banner__imgs .banner__item .banner__content
+	display: flex
+	flex-wrap: wrap
+	padding-left: calc((100vw - 1176px) / 2)
+	padding-right: 55px
+
+.banner__imgs .banner__item:nth-child(2n+2) .banner__content
+	padding-left: 55px
+	padding-right: calc((100vw - 1176px) / 2)
+
+.banner__imgs .banner__item .title__banner
+	width: 55%
+	margin-right: 45%
+	margin-bottom: 15px
+
+.banner__imgs .banner__item .banner__btns
+	width: 100%
+	margin-top: auto
+	pointer-events: none
+	transform: scale(0)
+	transition: all .5s
+
+.banner__imgs .banner__item:hover .banner__btns
+	transform: scale(1)
+	pointer-events: all
+
+.banner__imgs .banner__item .button__details
+	max-width: 230px
+
+
+.banner__bg
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: 1
+	background-position: center
+	-webkit-background-size: cover
+	background-size: cover
+	background-repeat: no-repeat
+	transition: all 50s
+
+.banner__item:hover .banner__bg
+	transform: scale(2)

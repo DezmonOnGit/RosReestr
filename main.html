@@ -16,10 +16,14 @@
         <header class="header header--fixed">
             <div class="header__inner container">
                 <div class="header__top">
-                    <a href="" class="logo logo--large header__logo"></a>
+                    <a href="" class="logo logo--large header__logo" style="background-image: url(img/logo-large.svg);"></a>
                     <div class="header__btns">
-                        <a class="link link__visually-impaired header__visually-impaired header__btn" href="#">Версия для слабовидящих</a>
-                        <a class="link link__city header__city header__btn" href="#modal-cities">Москва</a>
+                        <a class="link link__visually-impaired header__visually-impaired header__btn" href="#">
+                            <i class="icon-eye"></i>Версия для слабовидящих
+                        </a>
+                        <a class="link link__city header__city header__btn" href="#modal-cities">
+                            <i class="icon-mark"></i>Москва
+                        </a>
                         <a class="link link__lang header__lang header__btn" href="#modal-lang">Рус</a>
                     </div>
                     <div class="header__info">
@@ -138,7 +142,9 @@
                         </div>
                     </nav>
                     <div class="header__btns">
-                        <a class="link link__search link-search--opener header__btn" href="#modal-search"></a>
+                        <a class="link link__search link-search--opener header__btn" href="#modal-search">
+                            <i class="icon-search"></i>
+                        </a>
                         <button class="button button--theme-green button__personal-area header__personal-area header__btn">Личный кабинет</button>
                     </div>
                 </div>
@@ -180,8 +186,194 @@
                     </div>
                 </div>
             </div>
+            <div class="main__item news">
+                <div class="news__inner container">
+                    <div class="title title__news">
+                        <h2>Новости</h2>
+                    </div>
+                    <div class="news__content">
+                        <div class="news__left">
+                            <div class="bar bar__news">
+                                <div class="new__link-box">
+                                    Новости <a class="link link--theme-green link--arrow link__news link__news--federal" href="">федеральные<i class="icon-full-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="slider slider--nav-white slider__news owl-carousel">
+                                <div class="slider__item" style="background-image: url(img/slider-news-1.jpg);">
+                                    <div class="slider__content">
+                                        <div class="title title--theme-white title__news-slider">Росреестр: за 9 месяцев 2019 года границ земельных участков с уточненными границами составила 56,3%</div>
+                                        <div class="date date--theme-white date__news-slider">07 ноября</div>
+                                    </div>
+                                </div>
+                                <div class="slider__item" style="background-image: url(img/slider-news-1.jpg);">
+                                    <div class="slider__content">
+                                        <div class="title title--theme-white title__news-slider">Росреестр: за 9 месяцев 2019 года границ земельных участков с уточненными границами составила 56,3%</div>
+                                        <div class="date date--theme-white date__news-slider">07 ноября</div>
+                                    </div>
+                                </div>
+                                <div class="slider__item" style="background-image: url(img/slider-news-1.jpg);">
+                                    <div class="slider__content">
+                                        <div class="title title--theme-white title__news-slider">Росреестр: за 9 месяцев 2019 года границ земельных участков с уточненными границами составила 56,3%</div>
+                                        <div class="date date--theme-white date__news-slider">07 ноября</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news__right">
+                            <div class="bar bar__news">
+                                <div class="new__link-box">
+                                    Новости <a class="link link--theme-green link--arrow link__news link__news--city" href="">москвы<i class="icon-full-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="list list--column list__news">
+                                <div class="list__item">
+                                    <div class="list__text">В Москве впервые все заявления от нотариусов поступили в росреестр в электронном виде</div>
+                                    <div class="date date--theme-green date__list date__list-news">08 ноября</div>
+                                </div>
+                                <div class="list__item">
+                                    <div class="list__text">Четыре корпуса ЖК «Спортивный квартал» поставлены на кадастровый учет</div>
+                                    <div class="date date--theme-green date__list date__list-news">23 октября</div>
+                                </div>
+                                <div class="list__item">
+                                    <div class="list__text">Храм святителя Николая Мирликийского чудотворца поставлен на кадастровый учет</div>
+                                    <div class="date date--theme-green date__list date__list-news">20 октября</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__item banner banner__collection" data-banner-count="5">
+                <div class="banner__parallax">
+                    <div class="banner__background" style="background-image: url(img/parallax-bg.jpg);"></div>
+                </div>
+                <div class="banner__inner banner__items container">
+                    <a class="banner__item" href="">
+                        <div class="title title__banner">Создание учетной записи юридического лица в ЕСИА</div>
+                        <div class="banner__btns">
+                            <span class="link link--uppercase link--theme-green link--arrow">перейти<i class="icon-full-arrow-right"></i></span>
+                        </div>
+                    </a>
+                    <a class="banner__item" href="">
+                        <div class="title title__banner">Конкурс на замещение вакантных должностей Центрального аппарата Росреестра</div>
+                        <div class="banner__btns">
+                            <span class="link link--uppercase link--theme-green link--arrow">перейти<i class="icon-full-arrow-right"></i></span>
+                        </div>
+                    </a>
+                    <a class="banner__item" href="">
+                        <div class="title title__banner">Нормативно-правовые акты</div>
+                        <div class="banner__btns">
+                            <span class="link link--uppercase link--theme-green link--arrow">перейти<i class="icon-full-arrow-right"></i></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="main__item banner banner__imgs">
+                <div class="banner__inner banner__items">
+                    <div class="banner__item">
+                        <div class="banner__bg" style="background-image: url(img/banner-1.jpg);"></div>
+                        <div class="banner__content">
+                            <div class="title title__banner">Извещение о продаже своей доли в праве собственности можно разместить на сайте Росреестра</div>
+                            <div class="banner__btns">
+                                <a class="button button--fix-width button--theme-green button__details" href="">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner__item">
+                        <div class="banner__bg" style="background-image: url(img/banner-2.jpg);"></div>
+                        <div class="banner__content">
+                            <div class="title title__banner">Как узнать и пересмотреть кадастровую стоимость недвижимости?</div>
+                            <div class="banner__btns">
+                                <a class="button button--fix-width button--theme-green button__details" href="">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__item info">
+                <div class="info__inner">
+                    <div class="info__left">
+                        <div class="info__content" style="background-image: url(img/reception-bg.jpg);">
+                            <div class="list list--column list--cards list__info">
+                                <a class="list__item" href="">
+                                    <div class="list__title">Обращение граждан on-line <i class="icon-full-arrow-right"></i></div>
+                                    <div class="prompt prompt__list">приемная</div>
+                                </a>
+                                <a class="list__item" href="">
+                                    <div class="list__title">Часто задаваемые вопросы <i class="icon-full-arrow-right"></i></div>
+                                    <div class="prompt prompt__list">приемная</div>
+                                </a>
+                                <a class="list__item" href="">
+                                    <div class="list__title">Опросы <i class="icon-full-arrow-right"></i></div>
+                                    <div class="prompt prompt__list">приемная</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="info__link-box">
+                            <a class="button button--theme-transparent button__review" href="">Оставить отзыв</a>
+                        </div>
+                    </div>
+                    <div class="info__right">
+                        <div class="info__content">
+                            <div class="list list--column list--cards list--theme-grey list__info">
+                                <div class="list__item">
+                                    <div class="list__icon-custom" style="background-image: url(img/icon-custom-1.svg);"></div>
+                                    <div class="list__title">Требования при надзоре</div>
+                                    <div class="list__text">Требования, оцениваемые при проведении надзора</div>
+                                    <div class="prompt prompt__list">важное</div>
+                                </div>
+                                <div class="list__item">
+                                    <div class="list__icon-custom" style="background-image: url(img/icon-custom-2.svg);"></div>
+                                    <div class="list__title">Открытые данные</div>
+                                    <div class="list__text">Наборы открытых данных Росреестра</div>
+                                    <div class="prompt prompt__list">важное</div>
+                                </div>
+                                <div class="list__item">
+                                    <div class="list__icon-custom" style="background-image: url(img/icon-custom-2.svg);"></div>
+                                    <div class="list__title">Противодействие коррупции</div>
+                                    <div class="list__text">Нормативные правовые в сфере противодействия коррупции</div>
+                                    <div class="prompt prompt__list">важное</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
-        <footer class="footer"></footer>
+        <footer class="footer">
+            <div class="footer__inner container">
+                <div class="footer__top">
+                    <div class="footer__logo-box">
+                        <a href="" class="logo logo--large footer__logo" style="background-image: url(img/logo-large-grass.svg);"></a>
+                    </div>
+                    <nav class="menu menu--theme-white footer__menu">
+                        <div class="menu__item">
+                            <a class="menu__link" href="#">Поиск</a>
+                        </div>
+                        <div class="menu__item">
+                            <a class="menu__link" href="#">Видеоинструкции</a>
+                        </div>
+                        <div class="menu__item">
+                            <a class="menu__link" href="#">Помощь и поддержка</a>
+                        </div>
+                        <div class="menu__item">
+                            <a class="menu__link" href="#">Электронные услуги и сервисы</a>
+                        </div>
+                        <div class="menu__item">
+                            <a class="menu__link" href="#">Территориальная сеть</a>
+                        </div>
+                        <div class="menu__item">
+                            <a class="menu__link" href="#">English version</a>
+                        </div>
+                    </nav>
+                    <div class="footer__info">
+                        <a class="link link__phone footer__phone" href="tel:88001003434">8 800 100 34 34</a>
+                        <div class="prompt prompt__footer">Звонок из регионов России бесплатный</div>
+                    </div>
+                </div>
+                <div class="footer__bottom"></div>
+            </div>
+        </footer>
     </div>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/jquery.formstyler.min.js"></script>

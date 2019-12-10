@@ -6,6 +6,10 @@
 
 .slider .owl-item
 	width: 100%
+	float: none
+
+.slider .owl-stage:after
+	display: none
 
 .slider .owl-prev,
 .slider .owl-next
@@ -16,10 +20,22 @@
 	transition: all .3s
 
 .slider .owl-prev
-	left: 92px
+	left: 0
 
 .slider .owl-next
+	right: 0
+
+.slider__main .owl-prev
+	left: 92px
+
+.slider__main .owl-next
 	right: 92px
+
+.slider__news .owl-prev
+	top: 112px
+
+.slider__news .owl-next
+	top: 112px
 
 .slider .owl-prev.disabled,
 .slider .owl-next.disabled
@@ -38,6 +54,14 @@
 .slider .owl-prev:hover .arrow-prev,
 .slider .owl-next:hover .arrow-next
 	fill: #67981A
+
+.slider--nav-white .owl-prev .arrow-prev,
+.slider--nav-white .owl-next .arrow-next
+	fill: #fff
+
+.slider--nav-white .owl-prev:hover .arrow-prev,
+.slider--nav-white .owl-next:hover .arrow-next
+	fill: #000
 
 .slider .arrow-next
 	transform: rotate(180deg)
@@ -79,3 +103,15 @@
 
 .slider__links .button__details
 	margin-right: 24px
+
+.slider__news .slider__item
+	display: flex
+	flex-wrap: wrap
+	min-height: 485px
+	padding: 0
+
+.slider__news .slider__content
+	width: 100%
+	margin-top: auto
+	background-color: rgba(82, 84, 86, 0.6)
+	padding: 20px 40px

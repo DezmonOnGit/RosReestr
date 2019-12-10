@@ -11,37 +11,31 @@
 	padding-left: 34px
 	position: relative
 
-.link__visually-impaired:before
-	content: ''
+.link__visually-impaired .icon-eye
 	width: 18px
 	height: 18px
+	font-size: 18px
+	color: #abacad
 	display: block
 	position: absolute
 	top: 0
 	left: 4px
-	background-image: url(../img/icon-eye.svg)
-	background-repeat: no-repeat
-	background-position: center
-	-webkit-background-size: contain
-	background-size: contain
 
 .link__city
 	padding-left: 34px
 	position: relative
 
-.link__city:before
+.link__city .icon-mark
 	content: ''
 	width: 18px
 	height: 18px
+	font-size: 18px
+	color: #abacad
 	display: block
 	position: absolute
 	top: 0
 	left: 4px
-	background-image: url(../img/icon-mark.svg)
-	background-repeat: no-repeat
-	background-position: center
-	-webkit-background-size: contain
-	background-size: contain
+
 
 .link__phone
 	font-size: 24px
@@ -53,16 +47,39 @@
 	height: 18px
 	position: relative
 
-.link__search:before
-	content: ''
+.link__search .icon-search
 	width: 18px
 	height: 18px
+	font-size: 20px
 	position: absolute
 	top: 0
 	left: 0
-	background-image: url(../img/icon-search.svg)
-	background-position: center
-	-webkit-background-size: contain
-	background-size: contain
-	background-repeat: no-repeat
 
+.link--arrow
+	display: inline-block
+	position: relative
+	padding-right: 35px
+
+.link--arrow .icon-full-arrow-right
+	width: 18px
+	height: 18px
+	font-size: 18px
+	position: absolute
+	top: 2px
+	right: 7px
+
+.link--arrow .icon-full-arrow-right
+	font-size: 18px
+	color: #292C2F
+	transform: translateX(0)
+	transition: all .3s
+
+.link--arrow:hover .icon-full-arrow-right
+	color: #68981A
+	transform: translateX(5px)
+
+.link--theme-green
+	color: #68981A
+
+.link--uppercase
+	text-transform: uppercase

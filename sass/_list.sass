@@ -1,0 +1,71 @@
+.list
+	display: flex
+	flex-wrap: wrap
+
+.list--column
+	flex-direction: column
+
+.list__item
+	margin-bottom: 32px
+
+.list__item:last-child
+	margin-bottom: 0
+
+.list__text
+	font-size: 18px
+	margin-bottom: 10px
+
+.list__title
+	font-size: 18px
+	margin-bottom: 12px
+
+.list--cards .list__item
+	width: 100%
+	padding: 40px
+	background-color: #fff
+	margin-bottom: 24px
+	box-shadow: 0 0 40px rgba(181,181,181,0)
+	text-decoration: none
+	position: relative
+	transition: all .5s
+
+.list--theme-grey .list__item
+	background-color: #F8F8F8
+
+.list--cards .list__item:last-child
+	margin-bottom: 0
+
+.list--cards .list__text
+	font-size: 16px
+
+.list--cards .list__title
+	color: #292C2F
+	padding-right: 40px
+	position: relative
+
+.list--cards .list__title .icon-full-arrow-right
+	width: 18px
+	height: 18px
+	position: absolute
+	top: 50%
+	right: 10px
+	transform: translate(0, -50%)
+	transition: all .3s
+
+.list--cards .list__item:hover .icon-full-arrow-right
+	transform: translate(5px, -50%)
+	color: #68981A
+
+.list--cards .list__item:hover
+	box-shadow: 0 0 40px rgba(181,181,181,.4)
+
+.list__icon-custom
+	position: absolute
+	top: 27px
+	left: 27px
+	width: 18px
+	height: 18px
+	background-repeat: no-repeat
+	-webkit-background-size: contain
+	background-size: contain
+	background-position: center
