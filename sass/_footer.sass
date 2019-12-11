@@ -5,8 +5,8 @@
 	padding-top: 52px
 	padding-bottom: 42px
 
-.footer__logo-box
-	width: 35%
+.footer__left
+	width: 30%
 
 .footer__logo
 	width: 245px
@@ -16,8 +16,19 @@
 	display: flex
 	padding-bottom: 23px
 	margin-bottom: 40px
+	position: relative
 
-.footer__menu
+.footer__top:after
+	content: ''
+	width: calc(100vw - ((100vw - 1200px) /2) + 160px)
+	height: 1px
+	position: absolute
+	bottom: 0
+	left: calc(-1 * ((100vw - 1200px) / 2) + 80px)
+	background-color: #D9D9DE
+	opacity: .2
+
+.footer__middle
 	width: 45%
 
 .footer__menu .menu__item
@@ -34,8 +45,24 @@
 .footer__menu .menu__item:hover .menu__link:after
 	display: none
 
-.footer__info
+.footer__right
 	width: 20%
+	margin-left: 5%
 
 .footer__phone
+	display: inline-block
 	color: #ffffff
+	font-size: 32px
+	line-height: 37px
+	letter-spacing: normal
+	margin-bottom: 12px
+
+.footer__left .list__social
+	width: 125px
+
+.footer__left .list__social .list__item
+	width: calc(25% - 12px)
+	margin-right: 16px
+
+.footer__left .list__social .list__item:nth-child(4n+4)
+	margin-right: 0
