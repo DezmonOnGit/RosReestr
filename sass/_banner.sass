@@ -1,5 +1,5 @@
 .banner__collection
-	padding: 60px 0 40px
+	padding: 127px 0 0
 	min-height: 425px
 	margin-bottom: 40px
 	position: relative
@@ -11,17 +11,10 @@
 	left: 0
 	width: 100%
 	height: 425px
-	background-color: #EDEBF6
-	overflow: hidden
 
-//.banner__background
-//	position: fixed
-//	width: 100%
-//	height: 900px
-//	top: 0
-//	left: 0
-//	transform: translateZ(-1px)
-//	z-index: 1
+.banner__img
+	max-width: 100%
+	max-height: 100%
 
 .banner__inner
 	position: relative
@@ -43,6 +36,7 @@
 	border-radius: 2px
 	box-shadow: 0 12px 40px rgba(181, 181, 181, .16)
 	text-decoration: none
+	position: relative
 	color: #292C2F
 	transition: all .3s
 
@@ -125,16 +119,96 @@
 .banner__collection .banner__btns
 	margin-top: auto
 
+.banner__imgs
+	margin-bottom: 80px
+
 .banner__imgs .banner__item
 	width: calc(50% - 12px)
 	height: 325px
+	padding: 40px 0
 	background-position: center
 	-webkit-background-size: cover
 	background-size: cover
 	background-repeat: no-repeat
+	position: relative
+
+.banner__imgs .banner__item .banner__content
+	position: relative
+	z-index: 20
 
 .banner__imgs .banner__item:nth-child(3n+3)
 	margin-right: 24px
 
 .banner__imgs .banner__item:nth-child(2n+2)
 	margin-right: 0
+
+.banner__imgs .banner__item .banner__content
+	display: flex
+	flex-wrap: wrap
+	padding-left: calc((100vw - 1176px) / 2)
+	padding-right: 55px
+
+.banner__imgs .banner__item:nth-child(2n+2) .banner__content
+	padding-left: 55px
+	padding-right: calc((100vw - 1176px) / 2)
+
+.banner__imgs .banner__item .title__banner
+	width: 55%
+	margin-right: 45%
+	margin-bottom: 15px
+
+.banner__imgs .banner__item .banner__btns
+	width: 100%
+	margin-top: auto
+	pointer-events: none
+	transform: scale(0)
+	transition: all .5s
+
+.banner__imgs .banner__item:hover .banner__btns
+	transform: scale(1)
+	pointer-events: all
+
+.banner__imgs .banner__item .button__details
+	max-width: 230px
+
+
+.banner__bg
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: 1
+	background-position: center
+	-webkit-background-size: cover
+	background-size: cover
+	background-repeat: no-repeat
+	transition: all 50s
+
+.banner__item:hover .banner__bg
+	transform: scale(2)
+
+.banner__items .banner__img-box
+	display: flex
+	justify-content: flex-end
+	align-items: flex-end
+	width: 50%
+	height: 50%
+	overflow: hidden
+	position: absolute
+	bottom: 0
+	right: 0
+
+
+.banner__collection .banner__item:hover
+	background-color: #68981A
+	box-shadow: 0 0 40px rgba(181, 181, 181, 0.16), 0px 20px 60px rgba(104, 152, 26, 0.3)
+
+.banner__collection .banner__item:hover .title__banner
+	color: #ffffff
+
+.banner__collection .banner__item:hover .banner__btns .link
+	color: #fff
+
+.banner__collection .banner__item:hover .banner__btns .icon-full-arrow-right
+	color: #fff

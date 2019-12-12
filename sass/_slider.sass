@@ -1,6 +1,10 @@
 .slider
 	position: relative
 
+.slider__content
+	position: relative
+	z-index: 20
+
 .slider .owl-stage
 	display: flex
 
@@ -49,6 +53,10 @@
 .slider .owl-prev .arrow-prev,
 .slider .owl-next .arrow-next
 	fill: #2E3032
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
 	transition: all .3s
 
 .slider .owl-prev:hover .arrow-prev,
@@ -63,18 +71,60 @@
 .slider--nav-white .owl-next:hover .arrow-next
 	fill: #000
 
-.slider .arrow-next
-	transform: rotate(180deg)
+.slider--nav-contrast .owl-prev,
+.slider--nav-contrast .owl-next
+	border-radius: 50%
+	background-color: #fff !important
+
+.slider--nav-contrast .owl-prev .arrow-prev,
+.slider--nav-contrast .owl-next .arrow-next
+	fill: #292C2F
+
+.slider--nav-contrast .owl-prev:hover .arrow-prev,
+.slider--nav-contrast .owl-next:hover .arrow-next
+	fill: #67981A
+
+.slider .owl-dots
+	width: 100%
+	display: flex
+	flex-wrap: wrap
+
+.slider .owl-dot span
+	width: 12px
+	height: 12px
+	display: block
+	border-radius: 50%
+	background-color: #2E3032
+	opacity: .2
+	margin-right: 18px
+	transition: all .3s
+	
+.slider .owl-dot.active span
+	background-color: #67981A
+	opacity: 1
+
+.slider--dots-center .owl-dots
+	width: calc(100vw - (100vw - 1176px))
+	position: absolute
+	top: 50%
+	left: calc((100vw - 1176px) / 2)
+
+.slider .owl-next .arrow-next
+	transform-origin: center
+	transform: rotate(180deg) translate(50%, 50%)
 
 .slider__main .slider__item
 	min-height: 400px
 	display: flex
+	background-position: top right
+	-webkit-background-size: contain
+	background-size: contain
 
 .slider__main .slider__item-inner
 	display: flex
 
 .slider__main .slider__content
-	width: 50%
+	width: 100%
 	display: flex
 	flex-wrap: wrap
 
@@ -84,7 +134,7 @@
 	line-height: 1.2
 
 .slider__main .slider__title
-	width: 100%
+	width: 50%
 
 .slider__main .slider__links
 	width: 100%
@@ -115,3 +165,28 @@
 	margin-top: auto
 	background-color: rgba(82, 84, 86, 0.6)
 	padding: 20px 40px
+
+.slider__item--gradient
+	position: relative
+
+.slider__item--gradient:before
+	content: ''
+	width: 100%
+	height: 100%
+	background-image: linear-gradient(90deg, #CEEFB9 55%, rgba(206, 239, 185, .5) 65%, rgba(206, 239, 185, 0) 95%)
+	position: absolute
+	top: 0
+	left: 0
+
+.slider__item--gradient-green:before
+	background-image: linear-gradient(90deg, #CEEFB9 55%, rgba(206, 239, 185, .5) 65%, rgba(206, 239, 185, 0) 95%)
+
+.slider__item--gradient-peach:before
+	background-image: linear-gradient(90deg, #FFF6E3 55%, rgba(255, 246, 227, .5) 65%, rgba(255, 246, 227, 0) 95%)
+
+.slider__item--gradient-pink:before
+	background-image: linear-gradient(90deg, #F9F2F1 55%, rgba(249, 242, 241, .5) 65%, rgba(249, 242, 241, 0) 95%)
+
+.slider__item--gradient-blue:before
+	background-image: linear-gradient(90deg, #e4f3fc 55%, rgba(228,243,252, .5) 65%, rgba(228,243,252, 0) 95%)
+
