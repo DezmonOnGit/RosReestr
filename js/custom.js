@@ -25,6 +25,10 @@ $(function () {
             $('body').css({
                 paddingTop: this.wrapper.innerHeight(),
             });
+
+            this.subMenu.css({
+                top: this.bottomBox.innerHeight()
+            });
         } else {
             this.wrapper.removeClass('stick');
 
@@ -35,6 +39,8 @@ $(function () {
             $('body').css({
                 paddingTop: '',
             });
+
+            this.addSubmenuOffsets();
         }
     };
     headerMenu.init = function () {
