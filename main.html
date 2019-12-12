@@ -13,10 +13,10 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="header">
+        <header class="header header--fixed">
             <div class="header__inner container">
                 <div class="header__top">
-                    <a href="" class="logo logo--large header__logo" style="background-image: url(img/logo-large.svg);"></a>
+                    <a href="" class="logo logo--large header__logo"></a>
                     <div class="header__btns">
                         <a class="link link__visually-impaired header__visually-impaired header__btn" href="#">
                             <i class="icon-eye"></i>Версия для слабовидящих
@@ -29,12 +29,6 @@
                     <div class="header__info">
                         <a class="link link__phone header__phone" href="tel:88001003434">8 800 100 34 34</a>
                         <div class="prompt prompt__header">Звонок из регионов России бесплатный</div>
-                    </div>
-                    <div class="header__special-btns-box">
-                        <a href="javascript: void(0);" class="link link__special">
-                            <i class="icon-coat-of-arms"></i>
-                            <i class="icon-arrow-bottom"></i>
-                        </a>
                     </div>
                 </div>
                 <div class="header__bottom">
@@ -157,8 +151,8 @@
             </div>
         </header>
         <main class="main">
-            <div class="main__item slider slider--nav-contrast slider--dots-center slider__main owl-carousel">
-                <div class="slider__item slider__item--gradient slider__item--gradient-green" style="background-image: url(img/slider-4.jpg)">
+            <div class="main__item slider slider__main owl-carousel">
+                <div class="slider__item" style="background-image: url(img/slider-1.jpg)">
                     <div class="slider__item-inner container">
                         <div class="slider__content">
                             <div class="slider__title">Зарегистрировать право на недвижимость</div>
@@ -169,7 +163,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="slider__item  slider__item--gradient slider__item--gradient-peach" style="background-image: url(img/slider-5.jpg)">
+                <div class="slider__item" style="background-image: url(img/slider-2.jpg)">
                     <div class="slider__item-inner container">
                         <div class="slider__content">
                             <div class="slider__title">Заказать выписку из ЕГРН</div>
@@ -180,7 +174,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="slider__item slider__item--gradient slider__item--gradient-pink" style="background-image: url(img/slider-6.jpg)">
+                <div class="slider__item" style="background-image: url(img/slider-3.jpg)">
                     <div class="slider__item-inner container">
                         <div class="slider__content">
                             <div class="slider__title">Поставить на кадастровый учет</div>
@@ -250,30 +244,23 @@
                 </div>
             </div>
             <div class="main__item banner banner__collection" data-banner-count="5">
-                <div class="parallax banner__parallax" data-parallax="scroll" data-image-src="img/banners-bg.jpg"></div>
+                <div class="banner__parallax">
+                    <div class="banner__background" style="background-image: url(img/parallax-bg.jpg);"></div>
+                </div>
                 <div class="banner__inner banner__items container">
                     <a class="banner__item" href="">
-                        <div class="banner__img-box">
-                            <img class="banner__img" src="img/banner-3.png" alt="">
-                        </div>
                         <div class="title title__banner">Создание учетной записи юридического лица в ЕСИА</div>
                         <div class="banner__btns">
                             <span class="link link--uppercase link--theme-green link--arrow">перейти<i class="icon-full-arrow-right"></i></span>
                         </div>
                     </a>
                     <a class="banner__item" href="">
-                        <div class="banner__img-box">
-                            <img class="banner__img" src="img/banner-4.png" alt="">
-                        </div>
                         <div class="title title__banner">Конкурс на замещение вакантных должностей Центрального аппарата Росреестра</div>
                         <div class="banner__btns">
                             <span class="link link--uppercase link--theme-green link--arrow">перейти<i class="icon-full-arrow-right"></i></span>
                         </div>
                     </a>
                     <a class="banner__item" href="">
-                        <div class="banner__img-box">
-                            <img class="banner__img" src="img/banner-5.png" alt="">
-                        </div>
                         <div class="title title__banner">Нормативно-правовые акты</div>
                         <div class="banner__btns">
                             <span class="link link--uppercase link--theme-green link--arrow">перейти<i class="icon-full-arrow-right"></i></span>
@@ -283,158 +270,27 @@
             </div>
             <div class="main__item banner banner__imgs">
                 <div class="banner__inner banner__items">
-                    <div class="banner__item">
-                        <div class="banner__bg" style="background-image: url(img/banner-6.jpg);"></div>
-                        <div class="banner__content">
-                            <div class="title title__banner">Извещение о продаже своей доли в праве собственности можно разместить на сайте Росреестра</div>
-                            <div class="banner__btns">
-                                <a class="button button--fix-width button--theme-green button__details" href="">Подробнее</a>
-                            </div>
+                    <a class="banner__item" href="" style="background-image: url(img/banner-1.jpg);">
+                        <div class="title title__banner">Создание учетной записи юридического лица в ЕСИА</div>
+                        <div class="banner__btns">
+                            <button class="button button--fix-width button--theme-green">Подробнее</button>
                         </div>
-                    </div>
-                    <div class="banner__item">
-                        <div class="banner__bg" style="background-image: url(img/banner-2.jpg);"></div>
-                        <div class="banner__content">
-                            <div class="title title__banner">Как узнать и пересмотреть кадастровую стоимость недвижимости?</div>
-                            <div class="banner__btns">
-                                <a class="button button--fix-width button--theme-green button__details" href="">Подробнее</a>
-                            </div>
+                    </a>
+                    <a class="banner__item" href="" style="background-image: url(img/banner-2.jpg);">
+                        <div class="banner__content"></div>
+                        <div class="title title__banner">Создание учетной записи юридического лица в ЕСИА</div>
+                        <div class="banner__btns">
+                            <button class="button button--fix-width button--theme-green">Подробнее</button>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="main__item info">
-                <div class="info__inner">
-                    <div class="info__left">
-                        <div class="info__content" style="background-image: url(img/reception-bg.jpg);">
-                            <div class="list list--column list--cards list__info">
-                                <a class="list__item" href="">
-                                    <div class="list__title">Обращение граждан on-line <i class="icon-full-arrow-right"></i></div>
-                                    <div class="prompt prompt__list">приемная</div>
-                                </a>
-                                <a class="list__item" href="">
-                                    <div class="list__title">Часто задаваемые вопросы <i class="icon-full-arrow-right"></i></div>
-                                    <div class="prompt prompt__list">приемная</div>
-                                </a>
-                                <a class="list__item" href="">
-                                    <div class="list__title">Опросы <i class="icon-full-arrow-right"></i></div>
-                                    <div class="prompt prompt__list">приемная</div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="info__link-box">
-                            <a class="button button--theme-transparent button__review" href="">Оставить отзыв</a>
-                        </div>
-                    </div>
-                    <div class="info__right">
-                        <div class="info__content">
-                            <div class="list list--column list--cards list--theme-grey list__info-cards">
-                                <div class="list__item list__item--theme-blue">
-                                    <div class="list__icon-custom" style="background-image: url(img/icon-custom-1.svg);"></div>
-                                    <div class="list__title">Требования при надзоре</div>
-                                    <div class="list__text">Требования, оцениваемые при проведении надзора</div>
-                                    <div class="prompt prompt__list">важное</div>
-                                </div>
-                                <div class="list__item list__item--theme-green">
-                                    <div class="list__icon-custom" style="background-image: url(img/icon-custom-2.svg);"></div>
-                                    <div class="list__title">Открытые данные</div>
-                                    <div class="list__text">Наборы открытых данных Росреестра</div>
-                                    <div class="prompt prompt__list">важное</div>
-                                </div>
-                                <div class="list__item">
-                                    <div class="list__icon-custom" style="background-image: url(img/icon-custom-3.svg);"></div>
-                                    <div class="list__title">Противодействие коррупции</div>
-                                    <div class="list__text">Нормативные правовые в сфере противодействия коррупции</div>
-                                    <div class="prompt prompt__list">важное</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </main>
-        <footer class="footer">
-            <div class="footer__inner container">
-                <div class="footer__top">
-                    <div class="footer__logo-box footer__left">
-                        <a href="" class="logo logo--large footer__logo" style="background-image: url(img/logo-large-grass.svg);"></a>
-                    </div>
-                    <nav class="menu menu--theme-white footer__menu footer__middle">
-                        <div class="menu__item">
-                            <a class="menu__link" href="#">Поиск</a>
-                        </div>
-                        <div class="menu__item">
-                            <a class="menu__link" href="#">Видеоинструкции</a>
-                        </div>
-                        <div class="menu__item">
-                            <a class="menu__link" href="#">Помощь и поддержка</a>
-                        </div>
-                        <div class="menu__item">
-                            <a class="menu__link" href="#">Электронные услуги и сервисы</a>
-                        </div>
-                        <div class="menu__item">
-                            <a class="menu__link" href="#">Территориальная сеть</a>
-                        </div>
-                        <div class="menu__item">
-                            <a class="menu__link" href="#">English version</a>
-                        </div>
-                    </nav>
-                    <div class="footer__info footer__right">
-                        <div class="title title__footer-info">Единый справочный телефон</div>
-                        <a class="link link__phone footer__phone" href="tel:88001003434">8 800 100 34 34</a>
-                        <div class="prompt prompt__footer">Звонок из регионов России бесплатный</div>
-                    </div>
-                </div>
-                <div class="footer__bottom">
-                    <div class="footer__left">
-                        <div class="list list__social">
-                            <div class="list__item">
-                                <a class="list__link list__link--white" href="">
-                                    <i class="icon-instagram"></i>
-                                </a>
-                            </div>
-                            <div class="list__item">
-                                <a class="list__link list__link--white" href="">
-                                    <i class="icon-odnoklasniki"></i>
-                                </a>
-                            </div>
-                            <div class="list__item">
-                                <a class="list__link list__link--white" href="">
-                                    <i class="icon-twitter"></i>
-                                </a>
-                            </div>
-                            <div class="list__item">
-                                <a class="list__link list__link--white" href="">
-                                    <i class="icon-vk"></i>
-                                </a>
-                            </div>
-                            <div class="list__item">
-                                <a class="list__link list__link--white" href="">
-                                    <i class="icon-facebook"></i>
-                                </a>
-                            </div>
-                            <div class="list__item">
-                                <a class="list__link list__link--white" href="">
-                                    <i class="icon-youtube"></i>
-                                </a>
-                            </div>
-                            <div class="list__item">
-                                <a class="list__link list__link--white" href="">
-                                    <i class="icon-social-1"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer__middle"></div>
-                    <div class="footer__bottom"></div>
-                </div>
-            </div>
-        </footer>
+        <footer class="footer"></footer>
     </div>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/jquery.formstyler.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
-    <script src="js/parallax.min.js"></script>
     <script src="js/custom.js"></script>
 </body>
 </html>

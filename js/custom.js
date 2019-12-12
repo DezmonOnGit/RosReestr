@@ -12,47 +12,11 @@ $(function () {
             top:  this.wrapper.innerHeight() - parseInt(headerMenu.bottomBox.css('padding-bottom')),
         });
     };
-    headerMenu.addStickToTop = function () {
-        var windowOffset = $(window).scrollTop();
-
-        if(windowOffset > 0) {
-            this.wrapper.addClass('stick');
-
-            this.wrapper.css({
-                top: -(this.topBox.innerHeight()),
-            });
-
-            $('body').css({
-                paddingTop: this.wrapper.innerHeight(),
-            });
-
-            this.subMenu.css({
-                top: this.bottomBox.innerHeight()
-            });
-        } else {
-            this.wrapper.removeClass('stick');
-
-            this.wrapper.css({
-                top: '',
-            });
-
-            $('body').css({
-                paddingTop: '',
-            });
-
-            this.addSubmenuOffsets();
-        }
-    };
     headerMenu.init = function () {
         this.addSubmenuOffsets();
-        this.addStickToTop();
 
         $(window).resize(function () {
-            headerMenu.addSubmenuOffsets();
-        });
-
-        $(window).scroll(function () {
-            headerMenu.addStickToTop();
+            this.addSubmenuOffsets();
         });
     };
 
@@ -69,15 +33,8 @@ $(function () {
         navText: [makeSliderArrow('arrow-prev'),makeSliderArrow('arrow-next')],
     };
 
-    var sliderMainOptions = {
-        items: 1,
-        nav: true,
-        dots: true,
-        navText: [makeSliderArrow('arrow-prev'),makeSliderArrow('arrow-next')],
-    }
-
     if($('.slider__main').length) {
-        $('.slider__main').owlCarousel(sliderMainOptions);
+        $('.slider__main').owlCarousel(defaultOptions);
     }
 
     if($('.slider__news').length) {
@@ -85,14 +42,6 @@ $(function () {
     }
 
     //----------------------sliders END----------------------
-
-
-
-    //----------------------parallax BEGIN----------------------
-    if($('.parallax').length) {
-        $('.banner__parallax').parallax();
-    }
-    //----------------------parallax END----------------------
 });
 
 
