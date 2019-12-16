@@ -161,11 +161,13 @@
 	width: 100%
 	margin-top: auto
 	pointer-events: none
-	transform: scale(0)
-	transition: all .5s
+	opacity: 0
+	transform: translateX(50px)
+	transition: transform .6s, opacity .4s
 
 .banner__imgs .banner__item:hover .banner__btns
-	transform: scale(1)
+	transform: translateX(0)
+	opacity: 1
 	pointer-events: all
 
 .banner__imgs .banner__item .button__details
@@ -183,10 +185,10 @@
 	-webkit-background-size: cover
 	background-size: cover
 	background-repeat: no-repeat
-	transition: all 50s
+	transition: all 1s
 
 .banner__item:hover .banner__bg
-	transform: scale(2)
+	transform: scale(1.05)
 
 .banner__items .banner__img-box
 	display: flex

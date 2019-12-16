@@ -1,41 +1,61 @@
 .news__full
+	height: 198px
 	width: 100%
 	padding-bottom: 24px
 
+
 .news__row
 	width: calc(54% - 16px)
+
 
 .news__flex
 	display: -webkit-box
 	display: -ms-flexbox
 	display: flex
 
+
 .news__card
+	position: relative
 	margin-top: 24px
 	border: 1px solid rgba(46, 48, 50, .1)
 	overflow: hidden
 
+
+.news__card:hover
+	-webkit-transition: all .3s
+	transition: all .3s
+	background: #f9f9f9
+
+
+.news__card:hover .news__text
+	color: #68981A
+
+
 .news__card:first-child
 	margin-right: 24px
 
-.news__item_row
-	height: 250px
 
 .news__item
-	position: relative
-	font-size: 16px
 	overflow: hidden
-	line-height: 160%
+	line-height: 1.6
+	font-size: 16px
 	color: #2A2D2F
 	padding: 16px 24px 0px 24px
+
+
+.news__text
+	font-size: 14px
+
 
 .news__date
 	position: absolute
 	bottom: 24px
 
+
 .news__full .news__date
 	position: absolute
-	bottom: 0px
+	bottom: 24px
+
 
 .round
 	border: 1px solid #68981A
@@ -45,35 +65,83 @@
 	padding: 24px
 	margin-right: 24px
 
+
 .pressa
 	background: #ECF7DE
 
+
 .pressa img
-	right: 186px
+	right: 232px
 	position: absolute
 	bottom: 0
-	width: 36% !important
+	width: 29% !important
+
 
 .main__bottom
 	display: flex
 	padding: 24px 0
+	justify-content: center
+
+
+.main__bottom a
+	padding-bottom: 27px
+
+
+.media__container
+	background: #F8F8F8
+
+
+.media__inner:hover .owl-item
+	cursor: pointer
+	color: #68981A
+
 
 .media__inner
-	padding-top: 80px !important
-	padding-bottom: 70px !important
+	padding-top: 80px
+	margin-bottom: 80px
+	//min-height: 754px
+
+
+.media__inner .owl-dots
+	position: absolute
+	top: 0
+	right: 0
+	margin-right: 198px !important
+	margin-top: -78px !important
+	width: auto
+	display: block
+
+.media__inner button.owl-dot
+	background: #2A2D2F !important
+	opacity: 0.2
+	width: 8px
+	height: 8px
+	border-radius: 50%
+	margin-right: 16px
+
+
+.news__content .slider__content
+	background: linear-gradient(180deg, rgba(42, 45, 47, 0) -1.46%, #444343 88%)
+	padding-left: 60px
+	padding-bottom: 40px
+	padding-right: 224px
+
 
 .media__img
 	background-repeat: no-repeat
 	width: 100%
 	background-size: cover
 
+
 .media__item
 	padding: 40px
 	position: relative
 
+
 .media__card
 	margin-bottom: 24px
 	border: 1px solid rgba(46, 48, 50, .1)
+
 
 .media__action
 	position: absolute
@@ -83,7 +151,12 @@
 	letter-spacing: 0.05em
 	text-transform: uppercase
 
-.breadcrumbs
+
+.breadcrumbs__inner
+	align-items: center
+	-webkit-align-items: center
+	-webkit-box-align: center
+	-ms-flex-align: center
 	display: -webkit-box
 	display: -ms-flexbox
 	display: flex
@@ -91,8 +164,15 @@
 	flex-wrap: wrap
 	margin-bottom: 37px
 
+
+.media__action img
+	display: initial !important
+	width: auto !important
+
+
 .breadcrumbs__home
 	margin-right: 18.25px
+
 
 .breadcrumbs a
 	color: #2E3032
@@ -103,92 +183,57 @@
 	text-decoration: none
 	position: relative
 
+
 .title__media
 	margin-bottom: 40px
+
 
 .green
 	background: #68981A
 
+
 .media
 	background: #F8F8F8
+
 
 .media__content
 	display: flex
 
+
 .media__left
 	width: 50%
+
 
 .media__right
 	width: 50%
 	padding-left: 224px
 	padding-bottom: 27px
 
+
 .main__inner
 	z-index: 1
 	right: 0
-	top: 612px
+	top: 525px
 	left: 0
 	position: absolute
 	height: 71px
 	background: #FFFFFF
 	box-shadow: 0px 12px 40px rgba(181, 181, 181, 0.16)
 
-.publick
-	background: white
-
-.publick__items
-	display: -webkit-box
-	display: -ms-flexbox
-	display: flex
-	-ms-flex-wrap: wrap
-	flex-wrap: wrap
-	width: calc(49% - 16px)
-	overflow: hidden
-	padding: 40px 0px 40px 65px
-	margin-right: 24px
-	margin-top: 80px
-	margin-bottom: 24px
-	background-color: #F8F8F8
-	border-radius: 2px
-	text-decoration: none
-	color: #292C2F
-	-webkit-transition: all .3s
-	transition: all .3s
-
-.publick__item
-	display: flex
-
-.publick__title
-	width: 100%
-	font-size: 18px
-	line-height: 1.6
-	-webkit-transition: all 3s
-	transition: all .3s
-
-.publick__inner
-	display: -webkit-box
-	display: -ms-flexbox
-	display: flex
-	-ms-flex-wrap: wrap
-	flex-wrap: wrap
-	overflow: hidden
-	padding: 0px 24px 32px
-	margin-bottom: 24px
-	text-decoration: none
-	color: #292C2F
-	-webkit-transition: all .3s
-	transition: all .3s
 
 .material__parallax
 	background: #F8F8F8 !important
 
+
 .material__title
+	align-items: center
 	margin-bottom: 40px
 	display: -webkit-box
 	display: -ms-flexbox
 	display: flex
 	-ms-flex-wrap: wrap
 	flex-wrap: wrap
+
 
 .material__title div
 	justify-content: center
@@ -196,6 +241,7 @@
 	align-self: center
 	flex-grow: 1
 	flex-shrink: 1
+
 
 .material__item
 	display: -webkit-box
@@ -217,6 +263,16 @@
 	transition: all .3s
 	width: 100%
 
+
+.material__item:hover
+	-webkit-box-shadow: 0 0 40px rgba(181, 181, 181, 0.6)
+	box-shadow: 0 0 40px rgba(181, 181, 181, 0.6)
+
+
+.material__item:hover .title
+	color: #68981A
+
+
 .material__file
 	margin-top: 16px
 	color: #2A2D2F
@@ -224,14 +280,18 @@
 	display: flex
 	align-items: center
 
+
 .opacity4
 	opacity: 0.4
+
 
 .material__file img
 	padding-right: 17.5px
 
+
 .alignRight
 	text-align: right
+
 
 .subscribe
 	border: 1px solid rgba(42, 45, 47, .1)
@@ -240,24 +300,35 @@
 	margin: 0 auto
 	width: 70%
 
+
 .subscribe__title
-	padding-bottom: 16px
+	margin-bottom: 27px
 	text-align: center
 	font-size: 20px
 	line-height: 1.6
+
+
+.subscribe__title .label
+	margin-bottom: 8px
+
 
 .subscribe__title span
 	color: #2A2D2F
 	opacity: 0.4
 	font-size: 16px
 
+
 .subscribe__item
 	list-style: none
-	width: calc(33.3333% - 16px)
+	width: calc(60% - 16px)
 	margin: 0 auto
+
 
 .subscribe__item ul
 	list-style: none
+	width: 55%
+	margin: 0 auto
+
 
 .subscribe__item button
 	background: #2E3032
@@ -267,6 +338,7 @@
 	letter-spacing: 0.05em
 	text-transform: uppercase
 	color: #FFFFFF
+
 
 .pressoffice__item
 	display: -webkit-box
@@ -286,15 +358,18 @@
 	transition: all .3s
 	background: #F8F8F8
 
+
 .pressoffice__absolute
 	position: absolute
 	bottom: 10%
+
 
 .pressoffice__card
 	background-color: #fff
 	padding: 0
 	position: relative
 	border: 1px solid rgba(46, 48, 50, .1)
+
 
 .pressoffice__phone
 	font-weight: 500
@@ -303,14 +378,18 @@
 	line-height: 100%
 	margin-bottom: 40px
 
+
 .f-18
 	font-size: 18px !important
+
 
 .pt-8
 	padding-top: 8px
 
+
 .pressoffice__box
 	padding: 40px 32px 20px 32px
+
 
 .pressoffice__email
 	border-top: 1px solid rgba(46, 48, 50, .1)
@@ -318,45 +397,46 @@
 	bottom: 0
 	position: absolute
 
+
 .footer
 	background: #292C2F
 
-.footer__inner
-	padding: 40px 32px 20px 32px
 
 .footer__item
 	display: -webkit-box
 	display: -ms-flexbox
 	display: flex
-	flex: 0 0 16em
 	-ms-flex-wrap: wrap
 	flex-wrap: wrap
-	width: calc(32% - 16px)
-	height: calc(1176px / 3 - 16px)
 	overflow: hidden
-	padding: 60px 32px
+	padding-top: 10px
 	margin-right: 24px
 	text-decoration: none
-	color: #292C2F
 	transition: all .3s
+
 
 .clear
 	clear: both
 
+
 .flexgrow1
 	flex-grow: 1
 
+
 .download__size
 	color: #2A2D2F
-	opacity: 0.4
+	padding-left: 4px
 	font-size: 16px
+
 
 .download__text
 	color: #2A2D2F
 	opacity: 1
 
+
 .download i
 	color: #68981A
+
 
 .label__banner
 	width: 100%
@@ -365,13 +445,83 @@
 	-webkit-transition: all .3s
 	transition: all .3s
 
-.footer__logo a
-	width: 164px
-	height: 86px
-	background-image: url(../img/logo.png)
-	background-repeat: no-repeat
-	background-size: contain
-	background-position: center
+//.footer__logo
+//	width: 25%
+//
+//
+//.footer__logo a
+//	width: 164px
+//	background-image: url(../img/logo.png)
+//	background-repeat: no-repeat
+//	background-size: contain
+//	background-position: center
+
+
+.publick
+	background: white
+
+
+.publick__items
+	cursor: pointer
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex
+	-ms-flex-wrap: wrap
+	flex-wrap: wrap
+	width: calc(49% - 16px)
+	overflow: hidden
+	padding: 40px 0px 40px 65px
+	margin-right: 24px
+	margin-top: 80px
+	margin-bottom: 24px
+	background-color: #F8F8F8
+	border-radius: 2px
+	text-decoration: none
+	color: #292C2F
+	-webkit-transition: all .3s
+	transition: all .3s
+
+
+.publick__item
+	display: flex
+
+
+.publick__items:hover
+	-webkit-box-shadow: 0 0 40px rgba(181, 181, 181, 0.6)
+	box-shadow: 0 0 40px rgba(181, 181, 181, 0.6)
+
+
+.publick__items:hover .title
+	color: #68981A
+
+
+.publick__title
+	width: 100%
+	font-size: 18px
+	line-height: 1.6
+	-webkit-transition: all 3s
+	transition: all .3s
+
+
+.publick__date
+	margin-top: 8px
+
+
+.publick__inner
+	padding-top: 0 !important
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex
+	-ms-flex-wrap: wrap
+	flex-wrap: wrap
+	overflow: hidden
+	padding: 0px 24px 32px
+	margin-bottom: 24px
+	text-decoration: none
+	color: #292C2F
+	-webkit-transition: all .3s
+	transition: all .3s
+
 
 .container-checkbox
 	display: block
@@ -398,6 +548,15 @@ input:checked ~ .checkmark
 	content: ""
 	position: absolute
 	display: none
+	left: 5px
+	top: 5px
+	width: 9px
+	height: 6px
+	border: solid white
+	border-width: 0 2px 2px 0
+	-webkit-transform: rotate(45deg)
+	-ms-transform: rotate(45deg)
+	transform: rotate(45deg)
 
 input:checked ~ .checkmark:after
 	display: block
@@ -409,13 +568,208 @@ input[type=checkbox]
 	height: 0
 	width: 0
 
-.checkmark:after
-	left: 5px
-	top: 5px
-	width: 9px
-	height: 6px
-	border: solid white
-	border-width: 0 2px 2px 0
-	-webkit-transform: rotate(45deg)
-	-ms-transform: rotate(45deg)
-	transform: rotate(45deg)
+.btn
+	font-size: 14px
+	line-height: 120%
+	text-align: center
+	letter-spacing: 0.05em
+	text-transform: uppercase
+	padding: 16px 0px
+	width: 100%
+
+//.footer__items
+//	display: flex
+//	color: white
+//	padding-top: 49px
+//	padding-bottom: 49px
+//	font-size: 14px
+//	line-height: 16px
+//
+//.footer__phone
+//	font-weight: 500
+//	font-size: 32px
+//	color: #FFFFFF
+//	padding-bottom: 12px
+//	text-decoration: none
+//
+//.footer__prompt
+//	font-size: 14px
+//	padding-top: 12px
+//	color: #FFFFFF
+//	opacity: 0.4
+//
+//.footer__items label
+//	color: white
+//	padding-bottom: 12px
+//
+//.footer__social
+//	width: 25%
+
+
+.footer__social img
+	width: 95px
+	height: 39px
+
+.form-group
+	margin-bottom: 42px
+	margin-top: 40px
+
+.form-group input
+	border: 0
+	font-size: 18px
+	line-height: 1.6
+	border-bottom: 1px solid rgba(0, 0, 0, .2)
+	color: #2A2D2F
+	opacity: 0.4
+	padding-bottom: 18px
+	width: 100%
+
+.news__row
+	height: 290px
+
+.news__row.full
+	width: 100%
+
+.form-group input:focus
+	outline: none
+
+.btn-dark
+	background: #2E3032
+
+.footer__menu ul
+	width: 50%
+	list-style: none
+
+.footer__menu a
+	font-size: 14px
+	line-height: 16px
+	color: #FFFFFF
+
+.footer__contact
+	width: 25%
+
+.footer__menu
+	width: 50%
+	display: flex
+
+.footer__contact.small .footer__phone
+	font-weight: 500
+	font-size: 18px
+	line-height: 21px
+
+
+.footer__copyrite
+	flex-direction: column
+	color: #FFFFFF
+	opacity: 0.4
+	width: 50%
+
+.footer__copyrite div
+	margin-bottom: 16px
+
+.line
+	border-bottom: 1px solid rgba(217, 217, 222, .2)
+	margin-right: 80px
+	margin-left: 80px
+
+.calendar
+	border: 1px solid rgba(46, 48, 50, .1)
+
+#calendar
+	width: 100%
+	text-align: center
+	padding-left: 10px
+	padding-right: 10px
+	padding-bottom: 25px
+	padding-top: 30px
+
+#calendar select
+	float: left
+	margin-left: 13px
+	margin-bottom: 30px
+
+#calendar input
+	float: right
+	margin-bottom: 30px
+
+#calendar select, #calendar input, #calendar
+	border: none
+	font-size: 16px
+	font-weight: normal
+	line-height: 1.6
+
+#calendar thead tr:last-child
+	font-size: small
+	color: rgb(85, 85, 85)
+
+#calendar tbody td
+	color: #2E3032
+	margin-bottom: 26px
+	padding: 7px 11px 7px 9px
+	cursor: pointer
+
+#calendar tbody td.today
+	background: #68981A
+	border-radius: 65px
+	color: white
+
+.news__pressa .owl-carousel.owl-loaded
+	position: relative
+
+.news__pressa .owl-carousel .owl-dots
+	width: auto
+	position: absolute
+	margin-top: -64px
+	right: 0
+	margin-right: 60px
+
+.news__pressa .owl-carousel button.owl-dot
+	background: #FFFFFF
+	opacity: 0.2
+	width: 8px
+	height: 8px
+	border-radius: 50%
+	margin-right: 16px
+
+.slider__news-pressa button.owl-dot.active
+	opacity: 1
+	background: #68981A !important
+
+.slider__item .news__right
+	padding-left: 24px
+
+.news__pressa .news__right,
+.slider__news-pressa .news__right
+	width: 40%
+	padding-left: 24px
+	padding-bottom: 27px
+
+.news__pressa .news__left,
+.slider__news-pressa .news__left
+	width: 60%
+
+
+.news__pressa .slider__item,
+.slider__news-pressa .slider__item
+	min-height: 361px
+
+.slider__news-pressa .owl-dot span
+	width: 8px
+	height: 8px
+
+.slider__main-pressa .slider__item
+	min-height: 314px
+
+.slider__main-pressa .slider__title
+	padding-top: 43.32px
+
+.menu__item img
+	padding-right: 15px
+
+.publick__inner .banner__btns
+	width: 100%
+	bottom: 60px
+	position: absolute
+
+.banner__materials
+	padding-top: 60px
