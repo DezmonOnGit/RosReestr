@@ -96,6 +96,10 @@ $(function () {
     if($('.slider__news-pressa').length) {
         $('.slider__news-pressa').owlCarousel(sliderPressaOptions);
     }
+    if($('.slider__news-pressa-main').length) {
+        $('.slider__news-pressa-main').owlCarousel(sliderPressaOptions);
+    }
+
 
     //----------------------sliders END----------------------
 

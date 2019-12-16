@@ -15,9 +15,11 @@
 
 
 .news__card
+	display: block
 	position: relative
 	margin-top: 24px
 	border: 1px solid rgba(46, 48, 50, .1)
+	text-decoration: none
 	overflow: hidden
 
 
@@ -58,13 +60,37 @@
 
 
 .round
+	display: inline-block
 	border: 1px solid #68981A
 	opacity: 0.7
 	border-radius: 50%
-	width: 43px
+	width: 60px
+	height: 60px
 	padding: 24px
 	margin-right: 24px
 
+.round--play
+	position: relative
+
+.round--play:after
+	content: ''
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	width: 11px
+	height: 14px
+	background-image: url(../img/Polygon-1.png)
+	background-position: center
+	-webkit-background-size: contain
+	background-size: contain
+	background-repeat: no-repeat
+
+.media__action .round
+	vertical-align: middle
+
+.media__action-text
+	vertical-align: middle
 
 .pressa
 	background: #ECF7DE
@@ -107,7 +133,7 @@
 	top: 0
 	right: 0
 	margin-right: 198px !important
-	margin-top: -78px !important
+	margin-top: -83px !important
 	width: auto
 	display: block
 
@@ -120,12 +146,11 @@
 	margin-right: 16px
 
 
-.news__content .slider__content
+.news__content .slider__news-pressa .slider__content
 	background: linear-gradient(180deg, rgba(42, 45, 47, 0) -1.46%, #444343 88%)
 	padding-left: 60px
 	padding-bottom: 40px
 	padding-right: 224px
-
 
 .media__img
 	background-repeat: no-repeat
@@ -139,9 +164,11 @@
 
 
 .media__card
+	display: block
+	color: #292C2F
+	text-decoration: none
 	margin-bottom: 24px
 	border: 1px solid rgba(46, 48, 50, .1)
-
 
 .media__action
 	position: absolute
@@ -731,6 +758,9 @@ input[type=checkbox]
 	border-radius: 50%
 	margin-right: 16px
 
+.slider__news-pressa
+	border: 1px solid transparent
+
 .slider__news-pressa button.owl-dot.active
 	opacity: 1
 	background: #68981A !important
@@ -751,7 +781,32 @@ input[type=checkbox]
 
 .news__pressa .slider__item,
 .slider__news-pressa .slider__item
-	min-height: 361px
+	height: 360px
+	min-height: auto
+	overflow: hidden
+
+.slider__news-pressa--media .slider__item
+	height: auto
+	min-height: 360px
+	text-decoration: none
+
+.slider__news-pressa .slider__item .title,
+.slider__news-pressa .slider__item .date
+	transition: all .3s
+
+.slider__news-pressa:not(.slider__news-pressa--media) .slider__item:hover,
+.slider__news-pressa:not(.slider__news-pressa--media) .slider__item:hover .title,
+.slider__news-pressa:not(.slider__news-pressa--media) .slider__item:hover .date
+	color: #68981A
+
+.slider__news-pressa--media .slider__media-box:hover .media__card
+	color: #FFFFFF
+
+.slider__news-pressa--media .slider__media-box:hover,
+.slider__news-pressa--media .media__card:hover .title,
+.slider__news-pressa--media .media__card:hover .date
+	color: #68981A
+
 
 .slider__news-pressa .owl-dot span
 	width: 8px
